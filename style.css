@@ -1,0 +1,103 @@
+style.css
+/* Reset e base de fonte para todos os elementos */
+* {
+  box-sizing: border-box; /* Inclui padding e border dentro do tamanho total dos elementos */
+  margin: 0;              /* Remove margens padrão do navegador */
+  padding: 0;             /* Remove espaçamentos internos padrão */
+  font-family: Arial, sans-serif; /* Define uma fonte base legível e moderna */
+}
+
+/* Estilização geral da página */
+body {
+  background-color: #ffffff; /* Fundo branco para uma aparência limpa */
+  color: #002147;            /* Cor padrão do texto (azul escuro) */
+  line-height: 1.6;          /* Altura da linha para facilitar a leitura */
+}
+
+/* Cabeçalho do site */
+header {
+  background: #002147;  /* Fundo azul escuro (mesma cor da fonte do body) */
+  color: white;         /* Texto branco para contraste */
+  padding: 20px;        /* Espaçamento interno */
+  text-align: center;   /* Centraliza o conteúdo */
+}
+
+/* Barra de navegação principal */
+nav {
+  background: #002147;  /* Fundo azul escuro */
+  text-align: center;   /* Centraliza os links */
+  padding: 10px 0;      /* Espaçamento vertical */
+}
+
+/* Links do menu de navegação */
+nav a {
+  color: white;               /* Links brancos */
+  text-decoration: none;     /* Remove sublinhado padrão */
+  margin: 0 15px;             /* Espaçamento horizontal entre os links */
+  font-weight: bold;         /* Deixa os links em negrito */
+}
+
+/* Efeito hover nos links de navegação */
+nav a:hover {
+  text-decoration: underline; /* Sublinha o link ao passar o mouse */
+}
+
+/* Seções principais do site */
+section {
+  padding: 40px 20px;         /* Espaçamento interno vertical e horizontal */
+  max-width: 900px;           /* Largura máxima para melhor leitura */
+  margin: auto;               /* Centraliza horizontalmente */
+}
+
+/* Galeria de imagens responsiva em grid */
+.galeria {
+  display: grid;                            /* Define um grid */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo com colunas adaptáveis */
+  gap: 15px;                                /* Espaçamento entre as imagens */
+  margin-top: 20px;                         /* Espaço acima da galeria */
+}
+
+/* Estilização das imagens da galeria */
+.galeria img {
+  width: 100%;                              /* Imagem ocupa 100% da célula */
+  height: auto;                             /* Mantém proporção da imagem */
+  border-radius: 8px;                       /* Cantos levemente arredondados */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);   /* Sombra suave para profundidade */
+}
+
+/* Formulário de contato ou envio */
+form {
+  max-width: 600px;        /* Largura máxima */
+  margin: auto;            /* Centraliza o formulário */
+  display: flex;           /* Layout flexível */
+  flex-direction: column; /* Organiza os campos em coluna */
+  gap: 15px;               /* Espaçamento entre os campos */
+}
+
+/* Estilo para campos de entrada e textarea */
+input, textarea {
+  padding: 12px;             /* Espaçamento interno confortável */
+  border: 1px solid #ccc;    /* Borda cinza clara */
+  border-radius: 4px;        /* Cantos levemente arredondados */
+  font-size: 1rem;           /* Tamanho de fonte padrão */
+}
+
+/* Botão de envio */
+button {
+  background: #002147;       /* Azul escuro */
+  color: white;              /* Texto branco */
+  border: none;              /* Remove borda padrão */
+  padding: 12px;             /* Espaçamento interno */
+  font-size: 1rem;           /* Tamanho da fonte */
+  border-radius: 4px;        /* Cantos arredondados */
+  cursor: pointer;           /* Muda o cursor ao passar o mouse */
+}
+
+/* Rodapé da página */
+footer {
+  text-align: center;       /* Centraliza o texto */
+  padding: 20px;            /* Espaçamento interno */
+  font-size: 0.9rem;        /* Tamanho um pouco menor */
+  background: #ffffff;      /* Fundo branco */
+  color: #666;              /* Cinza escuro para contraste suave */
+}
